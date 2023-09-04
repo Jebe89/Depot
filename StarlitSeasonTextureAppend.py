@@ -9,7 +9,7 @@ lib_dir = r'F:/UE4/starlitseason_archive/'
 coll = bpy.data.collections.get(collname)
 for obj in coll.objects:
     #print(obj.name)
-    lodcheck = obj.name.__contains__('Lod1') + obj.name.__contains__('Lod2') + obj.name.__contains__('Lod3')
+    lodcheck = obj.name.__contains__('Lod1') + obj.name.__contains__('Lod2') + obj.name.__contains__('Lod3') + obj.name.__contains__('Lod4')
     if lodcheck != 0:
         print(obj.name + 'is Lod')
         continue
